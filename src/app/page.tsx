@@ -276,29 +276,29 @@ function Nosotros() {
         </div>
 
         {/* Mission & Vision */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-16 sm:mb-20">
-          <div className="reveal group bg-paper border border-ink/5 p-8 sm:p-10 lg:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-16 sm:mb-20 max-w-5xl">
+          <div className="reveal group bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
              <div className="absolute bottom-0 left-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110" />
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blush rounded-[1.25rem] sm:rounded-[1.5rem] flex items-center justify-center mb-6 sm:mb-8 text-wine group-hover:scale-105 transition-transform duration-300">
-                <IconTarget className="w-6 h-6 sm:w-7 sm:h-7" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 transition-transform duration-300">
+                <IconTarget className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-[family-name:var(--font-sora)] text-xl sm:text-2xl font-bold text-ink mb-3 sm:mb-4">Misión</h3>
+              <h3 className="font-[family-name:var(--font-sora)] text-xl font-bold text-ink mb-2 sm:mb-3">Misión</h3>
               <p className="text-base text-slate leading-relaxed">
-                Convertir la complejidad en decisiones claras. Brindamos asesoramiento profesional, personalizado y estratégico para que cada cliente pueda cumplir sus obligaciones, reducir riesgos, ordenar sus recursos y avanzar con mayor seguridad.
+                Convertir la complejidad en decisiones claras. Brindamos asesoramiento profesional y estratégico para que puedas cumplir, prevenir y crecer con seguridad.
               </p>
             </div>
           </div>
 
-          <div className="reveal reveal-delay-1 group bg-paper border border-ink/5 p-8 sm:p-10 lg:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
+          <div className="reveal reveal-delay-1 group bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
              <div className="absolute top-0 right-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] -translate-y-1/2 translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110" />
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blush rounded-[1.25rem] sm:rounded-[1.5rem] flex items-center justify-center mb-6 sm:mb-8 text-wine group-hover:scale-105 transition-transform duration-300">
-                <IconEye className="w-6 h-6 sm:w-7 sm:h-7" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 transition-transform duration-300">
+                <IconEye className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-[family-name:var(--font-sora)] text-xl sm:text-2xl font-bold text-ink mb-3 sm:mb-4">Visión</h3>
+              <h3 className="font-[family-name:var(--font-sora)] text-xl font-bold text-ink mb-2 sm:mb-3">Visión</h3>
               <p className="text-base text-slate leading-relaxed">
-                Ser el estudio contable que nuestros clientes eligen cuando necesitan algo más que un contador. Ser referentes en asesoramiento profesional, innovación y acompañamiento, construyendo relaciones de largo plazo basadas en confianza, resultados y crecimiento.
+                Ser el estudio contable elegido para ir más allá de los números, construyendo relaciones a largo plazo basadas en confianza, innovación y resultados.
               </p>
             </div>
           </div>
@@ -368,8 +368,8 @@ function Metodologia() {
       <div className="mx-auto max-w-7xl px-5">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="reveal font-[family-name:var(--font-sora)] text-4xl sm:text-5xl font-bold text-ink tracking-tight">
-            No esperamos al problema.<br/>
-            <span className="gradient-text">Lo anticipamos.</span>
+            Una metodología enfocada en<br/>
+            <span className="gradient-text">resultados.</span>
           </h2>
           <p className="reveal reveal-delay-1 mt-6 text-lg text-slate">
             Una metodología clara para que siempre sepas dónde estás parado y hacia dónde vas.
@@ -538,17 +538,17 @@ function Clientes() {
   const ref = useReveal();
 
   const clients = [
-    { name: "Fernando Ojeda", rubro: "Peluquería", city: "Chaco" },
-    { name: "Mayra Coop", rubro: "Veterinaria", city: "Corrientes" },
+    { name: "Fernando Ojeda", rubro: "Peluquería", city: "Chaco", logo: "/LogosClientes/Logo-FernandoOjedaEstilista.png" },
+    { name: "Mayra Coop", rubro: "Veterinaria", city: "Corrientes", logo: "/LogosClientes/Logo-VeterinariaCorrientes.png" },
     { name: "Melany De Paula", rubro: "Influencer", city: "CABA" },
     { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar" },
-    { name: "Est. Martínez Cristal SRL", rubro: "Panadería", city: "Resistencia" },
+    { name: "Est. Martínez Cristal SRL", rubro: "Panadería", city: "Resistencia", logo: "/LogosClientes/Logo-Panaderia.png" },
     { name: "ARDIGITAL SAS", rubro: "Servicios de Software", city: "Barranqueras" },
-    { name: "Total Alimentos Arg. SAS", rubro: "Alimentos para Mascotas", city: "PBA" },
+    { name: "Total Alimentos Arg. SAS", rubro: "Alimentos para Mascotas", city: "PBA", logo: "/LogosClientes/Logo-TotalAlimentos.png" },
     { name: "Coop. Lautaro Comidas Ltda.", rubro: "Viandas", city: "Chaco" },
     { name: "Teresa Porfirio", rubro: "Instituto de Danzas", city: "Puerto Vilelas" },
     { name: "Dra. Cristina Zarratea", rubro: "Terapista", city: "Chaco" },
-    { name: "Avícola La Selección", rubro: "Productos Alimenticios", city: "Resistencia" },
+    { name: "Avícola La Selección", rubro: "Productos Alimenticios", city: "Resistencia", logo: "/LogosClientes/Logo-AvicolaLaSeleccion.png" },
   ];
 
   const row1 = [...clients.slice(0, 6), ...clients.slice(0, 6)];
@@ -580,8 +580,16 @@ function Clientes() {
               className="flex-shrink-0 w-80 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
             >
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5">
-                  {client.name.charAt(0)}
+                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
+                  {client.logo ? (
+                    <div className="w-full h-full bg-white flex items-center justify-center p-1.5">
+                      <div className="relative w-full h-full">
+                        <Image src={client.logo} alt={`Logo de ${client.name}`} fill className="object-contain" />
+                      </div>
+                    </div>
+                  ) : (
+                    client.name.charAt(0)
+                  )}
                 </div>
                 <div>
                   <p className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink line-clamp-1">
@@ -605,8 +613,16 @@ function Clientes() {
               className="flex-shrink-0 w-80 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
             >
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5">
-                  {client.name.charAt(0)}
+                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
+                  {client.logo ? (
+                    <div className="w-full h-full bg-white flex items-center justify-center p-1.5">
+                      <div className="relative w-full h-full">
+                        <Image src={client.logo} alt={`Logo de ${client.name}`} fill className="object-contain" />
+                      </div>
+                    </div>
+                  ) : (
+                    client.name.charAt(0)
+                  )}
                 </div>
                 <div>
                   <p className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink line-clamp-1">
