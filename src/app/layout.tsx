@@ -26,6 +26,7 @@ export const metadata: Metadata = {
       "Asesoramiento contable, impositivo, laboral y societario para personas, emprendedores y empresas en toda Argentina.",
     type: "website",
     locale: "es_AR",
+    images: ["/logo.png"],
   },
   icons: {
     icon: [
