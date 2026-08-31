@@ -28,6 +28,21 @@ export const metadata: Metadata = {
     url: "https://estudiocontablear.vercel.app",
     type: "website",
     locale: "es_AR",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "AR Estudio Contable & Asoc.",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AR Estudio Contable & Asoc. — Asesoramiento Contable, Impositivo y Societario",
+    description:
+      "Más de 15 años de trayectoria en asesoramiento contable, impositivo, laboral y societario. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
     images: ["/logo.png"],
   },
   icons: {
