@@ -277,10 +277,10 @@ function Nosotros() {
 
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-16 sm:mb-20 max-w-5xl">
-          <div className="reveal group bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-             <div className="absolute bottom-0 left-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110" />
+          <div className="reveal group cursor-pointer bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md active:border-wine/10 active:shadow-md focus:border-wine/10 focus:shadow-md transition-all duration-300 relative overflow-hidden" tabIndex={0}>
+             <div className="absolute bottom-0 left-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] translate-y-1/2 -translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110 group-active:scale-110 group-focus:scale-110" />
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 transition-transform duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 group-active:scale-105 group-focus:scale-105 transition-transform duration-300">
                 <IconTarget className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <h3 className="font-[family-name:var(--font-sora)] text-xl font-bold text-ink mb-2 sm:mb-3">Misión</h3>
@@ -290,10 +290,10 @@ function Nosotros() {
             </div>
           </div>
 
-          <div className="reveal reveal-delay-1 group bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md transition-all duration-300 relative overflow-hidden">
-             <div className="absolute top-0 right-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] -translate-y-1/2 translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110" />
+          <div className="reveal reveal-delay-1 group cursor-pointer bg-paper border border-ink/5 p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:border-wine/10 hover:shadow-md active:border-wine/10 active:shadow-md focus:border-wine/10 focus:shadow-md transition-all duration-300 relative overflow-hidden" tabIndex={0}>
+             <div className="absolute top-0 right-0 w-64 h-64 bg-rose/5 rounded-full blur-[60px] -translate-y-1/2 translate-x-1/3 pointer-events-none transition-transform duration-700 group-hover:scale-110 group-active:scale-110 group-focus:scale-110" />
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 transition-transform duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blush rounded-[1rem] sm:rounded-[1.25rem] flex items-center justify-center mb-5 sm:mb-6 text-wine group-hover:scale-105 group-active:scale-105 group-focus:scale-105 transition-transform duration-300">
                 <IconEye className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <h3 className="font-[family-name:var(--font-sora)] text-xl font-bold text-ink mb-2 sm:mb-3">Visión</h3>
@@ -312,7 +312,7 @@ function Nosotros() {
           <div className="w-full h-px lg:w-px lg:h-8 bg-ink/10" />
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 w-full">
             {values.map((v) => (
-              <span key={v} className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-blush/40 text-wine text-sm font-semibold border border-wine/5 select-none transition-colors duration-300 hover:bg-blush hover:border-wine/10">
+              <span key={v} className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-blush/40 text-wine text-sm font-semibold border border-wine/5 select-none transition-colors duration-300 hover:bg-blush hover:border-wine/10 active:bg-blush active:border-wine/10 focus:bg-blush focus:border-wine/10 cursor-pointer" tabIndex={0}>
                 {v}
               </span>
             ))}
@@ -328,7 +328,7 @@ function Nosotros() {
           </div>
           
           {team.map((member, i) => (
-            <div key={i} className={`reveal reveal-delay-${(i % 4) + 1} bg-paper border border-ink/5 p-6 sm:p-8 rounded-[2rem] transition-all duration-300 hover:border-wine/10 hover:shadow-md hover:-translate-y-1 flex flex-col h-full`}>
+            <div key={i} className={`reveal reveal-delay-${(i % 4) + 1} bg-paper border border-ink/5 p-6 sm:p-8 rounded-[2rem] transition-all duration-300 hover:border-wine/10 hover:shadow-md hover:-translate-y-1 active:border-wine/10 active:shadow-md active:-translate-y-1 focus:border-wine/10 focus:shadow-md focus:-translate-y-1 cursor-pointer flex flex-col h-full`} tabIndex={0}>
               <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blush/80 flex items-center justify-center text-wine font-[family-name:var(--font-sora)] font-bold text-lg sm:text-xl mb-5 sm:mb-6 border border-wine/10 shrink-0 select-none">
                 {member.name.split(" ").map(n => n[0]).join("")}
               </div>
@@ -397,9 +397,9 @@ function Metodologia() {
                 </div>
 
                 {/* Center Node */}
-                <div className="shrink-0 relative group">
-                  <div className="absolute inset-0 bg-blush rounded-full scale-0 group-hover:scale-125 transition-transform duration-500 ease-out" />
-                  <div className="w-20 h-20 bg-paper rounded-full border-2 border-blush shadow-sm flex items-center justify-center relative z-10 group-hover:border-rose/30 transition-colors duration-300">
+                <div className="shrink-0 relative group cursor-pointer" tabIndex={0}>
+                  <div className="absolute inset-0 bg-blush rounded-full scale-0 group-hover:scale-125 group-active:scale-125 group-focus:scale-125 transition-transform duration-500 ease-out" />
+                  <div className="w-20 h-20 bg-paper rounded-full border-2 border-blush shadow-sm flex items-center justify-center relative z-10 group-hover:border-rose/30 group-active:border-rose/30 group-focus:border-rose/30 transition-colors duration-300">
                     <StepIcon className="w-8 h-8 text-wine" />
                     {/* Number Badge */}
                     <div className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-wine text-paper flex items-center justify-center text-xs font-bold font-[family-name:var(--font-sora)] shadow-sm">
