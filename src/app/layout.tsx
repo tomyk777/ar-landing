@@ -57,10 +57,74 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
+const siteUrl = "https://estudiocontablear.vercel.app";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  name: "AR Estudio Contable & Asoc.",
+  description:
+    "Estudio contable con más de 15 años de trayectoria, especializado en asesoramiento contable, impositivo, laboral y societario.",
+  url: siteUrl,
+  email: "aronlinecontable@gmail.com",
+  telephone: "+54-11-2456-0613",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Tucumán 3132, oficina 3",
+    addressLocality: "CABA",
+    addressCountry: "AR",
+  },
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", name: "Buenos Aires" },
+    { "@type": "AdministrativeArea", name: "Chaco" },
+  ],
+  employee: [
+    {
+      "@type": "Person",
+      name: "Yamina Evelin Alfonso",
+      jobTitle: "Contadora Pública — Especialista Tributaria",
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "Matrícula profesional",
+          recognizedBy: { "@type": "Organization", name: "CPCE Buenos Aires" },
+          identifier: "N° 492272 T°188 F°173",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "Matrícula profesional",
+          recognizedBy: { "@type": "Organization", name: "CPCE CABA" },
+          identifier: "T°420 F°011",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "Matrícula profesional",
+          recognizedBy: { "@type": "Organization", name: "CPCE Chaco" },
+          identifier: "N° 2981 T°XV F°XV",
+        },
+      ],
+    },
+    { "@type": "Person", name: "Mariano Rivera", jobTitle: "Auditoría de Estados Contables" },
+    { "@type": "Person", name: "Andrea Galliotti", jobTitle: "Liquidación de Sueldos" },
+    { "@type": "Person", name: "Andrea Paredes", jobTitle: "Conciliación y Registraciones Contables" },
+  ],
+  sameAs: [
+    "https://instagram.com/ar_estudiocontable",
+    "https://x.com/AR_Contable",
+    "https://www.linkedin.com/company/ar-estudiocontable",
+    "https://www.tiktok.com/@arcontable",
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="es" className={`${sora.variable} ${inter.variable} antialiased`}>
       <body className="min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/*
           DIRECTION CONTRACT — seed d3e2c679
           THESIS: This surface is a warm branded receipt — structured fields,
