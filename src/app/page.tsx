@@ -163,7 +163,8 @@ function Hero() {
         
         {/* Subtitle */}
         <p className="reveal reveal-delay-2 mt-8 text-lg sm:text-xl text-slate leading-relaxed max-w-2xl">
-          Tus números. Tus decisiones. Tu crecimiento. Te acompañamos con asesoramiento contable, impositivo, laboral y societario para personas, emprendedores y empresas en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.
+          Ordenamos tus números para impulsar tu crecimiento.
+Asesoramos a personas, emprendedores y empresas en materia contable, impositiva, laboral y societaria, con atención personalizada en Argentina y de manera remota para toda Latinoamérica.
         </p>
 
         {/* CTA */}
@@ -540,7 +541,7 @@ function Clientes() {
   const clients = [
     { name: "Fernando Ojeda", rubro: "Peluquería", city: "Chaco", logo: "/LogosClientes/Logo-FernandoOjedaEstilista.png" },
     { name: "Mayra Coop", rubro: "Veterinaria", city: "Corrientes", logo: "/LogosClientes/Logo-VeterinariaCorrientes.png" },
-    { name: "Melany De Paula", rubro: "Influencer", city: "CABA" },
+    { name: "Advance Bio", rubro: "Productos Alimenticios", city: "CABA", logo: "/LogosClientes/Logo-AdvanceBio.png" },
     { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar" },
     { name: "Est. Martínez Cristal SRL", rubro: "Panadería", city: "Resistencia", logo: "/LogosClientes/Logo-Panaderia.png" },
     { name: "ARDIGITAL SAS", rubro: "Servicios de Software", city: "Barranqueras" },
