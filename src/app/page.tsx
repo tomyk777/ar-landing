@@ -880,7 +880,17 @@ function Footer() {
 
         <div className="pt-8 border-t border-paper/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-paper/70">
           <p>© {new Date().getFullYear()} AR | Estudio Contable & Asoc. Todos los derechos reservados.</p>
-          <p>Diseñado para crecer.</p>
+          <p>
+            Desarrollado por{' '}
+            <a
+              href="https://www.linkedin.com/in/tom%C3%A1s-kreczmer-b5682a37a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-paper transition-colors duration-300"
+            >
+              Tomás Kreczmer
+            </a>
+          </p>
         </div>
       </div>
     </footer>
