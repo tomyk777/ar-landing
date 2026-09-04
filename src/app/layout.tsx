@@ -21,7 +21,36 @@ export const metadata: Metadata = {
   title: "AR Estudio Contable & Asoc. | Contable, Impositivo y Laboral",
   description:
     "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
-  openGraph: {
+ keywords: [
+    "estudio contable CABA",
+    "estudio contable Chaco",
+    "contador CABA",
+    "contador Buenos Aires",
+    "contador Chaco",
+    "asesoramiento contable Buenos Aires",
+    "alta monotributo",
+    "liquidación de monotributo",
+    "liquidación de sueldos",
+    "contador para PyMEs",
+    "contador para monotributistas",
+    "constitución de sociedades SAS SRL",
+    "asesoramiento impositivo Argentina",
+    "contador online Argentina",
+    "estudio contable multijurisdicción",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },  
+     },
+    openGraph: {
     title: "AR Estudio Contable & Asoc.",
     description:
       "Asesoramiento contable, impositivo, laboral y societario para personas, emprendedores y empresas en toda Argentina.",
