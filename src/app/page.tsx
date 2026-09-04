@@ -190,7 +190,7 @@ Asesoramos a personas, emprendedores y empresas en materia contable, impositiva,
             {[
               { value: "+15", label: "Años de trayectoria", sub: "Desde 2010" },
               { value: "4", label: "Profesionales", sub: "Equipo interdisciplinario" },
-              { value: "3", label: "Jurisdicciones", sub: "CABA · Bs. As. · Chaco" },
+              { value: "+24", label: "Jurisdicciones", sub: "Argentina y países limítrofes" },
             ].map((stat, i) => (
               <div key={i} className="relative group p-8 text-center transition-all duration-500">
                 <div className="absolute inset-0 bg-paper/40 rounded-[2rem] scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm" />
@@ -214,7 +214,7 @@ Asesoramos a personas, emprendedores y empresas en materia contable, impositiva,
 function Nosotros() {
   const ref = useReveal();
 
-  const team = [
+  const leaders = [
     {
       name: "Yamina Alfonso",
       role: "CEO · Contadora Pública (Mgtr.)",
@@ -227,6 +227,9 @@ function Nosotros() {
       credentials: "",
       desc: "Responsable de la auditoría de estados contables y del dictamen sobre la situación financiera real de cada cliente.",
     },
+  ];
+
+  const members = [
     {
       name: "Andrea Galliotti",
       role: "Liquidación de Sueldos",
@@ -238,6 +241,12 @@ function Nosotros() {
       role: "Conciliación y Registraciones Contables",
       credentials: "",
       desc: "Responsable de mantener al día los registros contables, asegurando que los libros reflejen fielmente la operación.",
+    },
+    {
+      name: "Mariana Gauna",
+      role: "Auditoría de Estados Contables",
+      credentials: "",
+      desc: "Participa en la auditoría y análisis de los estados contables, garantizando la exactitud de la información financiera.",
     },
   ];
 
@@ -321,30 +330,54 @@ function Nosotros() {
         </div>
 
         {/* Team Section */}
-        <div className="mt-16 sm:mt-24 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="lg:col-span-4 mb-4 sm:mb-6">
+        <div className="mt-16 sm:mt-24">
+          <div className="mb-8 sm:mb-10">
             <h3 className="reveal font-[family-name:var(--font-sora)] text-2xl sm:text-3xl font-bold text-ink text-center lg:text-left">
               Nuestro equipo
             </h3>
           </div>
           
-          {team.map((member, i) => (
-            <div key={i} className={`reveal reveal-delay-${(i % 4) + 1} bg-paper border border-ink/5 p-6 sm:p-8 rounded-[2rem] transition-all duration-300 hover:border-wine/10 hover:shadow-md hover:-translate-y-1 active:border-wine/10 active:shadow-md active:-translate-y-1 focus:border-wine/10 focus:shadow-md focus:-translate-y-1 cursor-pointer flex flex-col h-full`} tabIndex={0}>
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blush/80 flex items-center justify-center text-wine font-[family-name:var(--font-sora)] font-bold text-lg sm:text-xl mb-5 sm:mb-6 border border-wine/10 shrink-0 select-none">
-                {member.name.split(" ").map(n => n[0]).join("")}
+          {/* Leaders - 2 Columns (More Impact) */}
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
+            {leaders.map((member, i) => (
+              <div key={`leader-${i}`} className={`reveal reveal-delay-${i + 1} bg-paper border border-ink/5 p-8 sm:p-10 rounded-[2.5rem] transition-all duration-300 hover:border-wine/20 hover:shadow-lg hover:-translate-y-2 active:border-wine/20 active:shadow-lg active:-translate-y-2 focus:border-wine/20 focus:shadow-lg focus:-translate-y-2 cursor-pointer flex flex-col h-full`} tabIndex={0}>
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-blush/80 flex items-center justify-center text-wine font-[family-name:var(--font-sora)] font-bold text-xl sm:text-2xl mb-6 border border-wine/10 shrink-0 select-none shadow-inner">
+                  {member.name.split(" ").map(n => n[0]).join("")}
+                </div>
+                <h4 className="font-[family-name:var(--font-sora)] text-xl sm:text-2xl font-bold text-ink">
+                  {member.name}
+                </h4>
+                <p className="text-base font-semibold text-rose mt-1.5">{member.role}</p>
+                {member.credentials && (
+                  <p className="text-sm font-medium text-slate mt-2 border-t border-ink/5 pt-2">{member.credentials}</p>
+                )}
+                <p className="text-base text-slate mt-4 leading-relaxed">
+                  {member.desc}
+                </p>
               </div>
-              <h4 className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink">
-                {member.name}
-              </h4>
-              <p className="text-sm font-semibold text-rose mt-1">{member.role}</p>
-              {member.credentials && (
-                <p className="text-xs font-medium text-slate mt-2 border-t border-ink/5 pt-2">{member.credentials}</p>
-              )}
-              <p className="text-sm text-slate mt-3 sm:mt-4 leading-relaxed">
-                {member.desc}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Members - 3 Columns */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {members.map((member, i) => (
+              <div key={`member-${i}`} className={`reveal reveal-delay-${(i % 3) + 1} bg-paper border border-ink/5 p-6 sm:p-8 rounded-[2rem] transition-all duration-300 hover:border-wine/10 hover:shadow-md hover:-translate-y-1 active:border-wine/10 active:shadow-md active:-translate-y-1 focus:border-wine/10 focus:shadow-md focus:-translate-y-1 cursor-pointer flex flex-col h-full`} tabIndex={0}>
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate/5 flex items-center justify-center text-ink/70 font-[family-name:var(--font-sora)] font-bold text-lg mb-5 border border-ink/5 shrink-0 select-none">
+                  {member.name.split(" ").map(n => n[0]).join("")}
+                </div>
+                <h4 className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink">
+                  {member.name}
+                </h4>
+                <p className="text-sm font-semibold text-slate/80 mt-1">{member.role}</p>
+                {member.credentials && (
+                  <p className="text-xs font-medium text-slate mt-2 border-t border-ink/5 pt-2">{member.credentials}</p>
+                )}
+                <p className="text-sm text-slate mt-3 leading-relaxed">
+                  {member.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
