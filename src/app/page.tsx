@@ -189,7 +189,7 @@ Asesoramos a personas, emprendedores y empresas en materia contable, impositiva,
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
             {[
               { value: "+15", label: "Años de trayectoria", sub: "Desde 2010" },
-              { value: "4", label: "Profesionales", sub: "Equipo interdisciplinario" },
+              { value: "5", label: "Profesionales", sub: "Equipo interdisciplinario" },
               { value: "+24", label: "Jurisdicciones", sub: "Argentina y países limítrofes" },
             ].map((stat, i) => (
               <div key={i} className="relative group p-8 text-center transition-all duration-500">
