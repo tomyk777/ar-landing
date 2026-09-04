@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://estudiocontablear.vercel.app"),
+  metadataBase: new URL("https://arcontable.ar"),
   title: "AR Estudio Contable & Asoc. | Contable, Impositivo y Laboral",
   description:
     "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "AR Estudio Contable & Asoc.",
     description:
       "Asesoramiento contable, impositivo, laboral y societario para personas, emprendedores y empresas en toda Argentina.",
-    url: "https://estudiocontablear.vercel.app",
+    url: "https://arcontable.ar",
     type: "website",
     locale: "es_AR",
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-const siteUrl = "https://estudiocontablear.vercel.app";
+const siteUrl = "https://arcontable.ar";
 
 const jsonLd = {
   "@context": "https://schema.org",
