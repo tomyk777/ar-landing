@@ -18,9 +18,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://estudiocontablear.vercel.app"),
-  title: "AR Estudio Contable & Asoc. — Asesoramiento Contable, Impositivo y Societario",
+  title: "AR Estudio Contable & Asoc. | Contable, Impositivo y Laboral",
   description:
-    "Más de 15 años de trayectoria en asesoramiento contable, impositivo, laboral y societario. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
+    "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
   openGraph: {
     title: "AR Estudio Contable & Asoc.",
     description:
