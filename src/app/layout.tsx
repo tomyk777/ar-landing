@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: "es_AR",
     images: [
       {
-        url: "/Logo-OGImage.png",
+        url: "/LogoOGImage2.jpg",
         width: 1200,
         height: 630,
         alt: "AR Estudio Contable & Asoc.",
