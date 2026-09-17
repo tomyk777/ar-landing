@@ -818,8 +818,8 @@ function Footer() {
   const socials = [
     { icon: IconInstagram, href: "https://instagram.com/ar_estudiocontable", label: "Instagram" },
     { icon: IconX, href: "https://x.com/AR_Contable", label: "X" },
-    { icon: IconLinkedIn, href: "https://linkedin.com/company/AR_EstudioContable", label: "LinkedIn" },
-    { icon: IconTikTok, href: "https://tiktok.com/@arcontable", label: "TikTok" },
+    { icon: IconLinkedIn, href: "https://www.linkedin.com/in/ar-estudio-contable-online/", label: "LinkedIn" },
+    { icon: IconTikTok, href: "https://www.tiktok.com/@arcontable.ar?is_from_webapp=1&sender_device=pc", label: "TikTok" },
   ];
 
   return (
@@ -833,7 +833,7 @@ function Footer() {
               Tus números. Tus decisiones.<br/>Tu crecimiento.
             </p>
             <p className="mt-4 text-sm text-paper/70 max-w-sm leading-relaxed">
-              Estudio Contable integral con más de 15 años de trayectoria. CABA, Buenos Aires y Chaco.
+              Estudio Contable integral con más de 15 años de trayectoria.
             </p>
           </div>
 
@@ -851,7 +851,7 @@ function Footer() {
           </div>
 
           <div>
-            <p className="font-[family-name:var(--font-sora)] text-base font-bold text-paper mb-6">Redes & Matrículas</p>
+            <p className="font-[family-name:var(--font-sora)] text-base font-bold text-paper mb-6">Redes</p>
             <div className="flex gap-4 mb-8">
               {socials.map((s) => {
                 const SocialIcon = s.icon;
@@ -868,11 +868,6 @@ function Footer() {
                   </a>
                 );
               })}
-            </div>
-            <div className="text-xs text-paper/70 space-y-2 font-medium">
-              <p>Yamina Alfonso — CPCE Bs. As. Mat. N° 492272</p>
-              <p>CPCE CABA T°420 F°011</p>
-              <p>CPCE Chaco N° 2981</p>
             </div>
           </div>
           
