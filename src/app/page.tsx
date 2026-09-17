@@ -30,13 +30,14 @@ import {
 import { JsonLd } from "@/components/JsonLd";
 
 const WHATSAPP_URL =
-  "https://wa.me/541124560613?text=Hola%2C%20quiero%20consultar%20sobre%20los%20servicios%20de%20AR%20Estudio%20Contable";
+  "https://wa.me/541124560613";
 
 const NAV_LINKS = [
   { label: "Nosotros", href: "#nosotros" },
   { label: "Cómo trabajamos", href: "#metodologia" },
   { label: "Servicios", href: "#servicios" },
   { label: "Clientes", href: "#clientes" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -157,18 +158,31 @@ function Hero() {
 
       <div className="mx-auto max-w-7xl px-5 w-full relative z-10 flex flex-col items-center text-center">
         {/* Headline */}
-        <h1 className="reveal reveal-delay-1 max-w-5xl font-[family-name:var(--font-sora)] text-5xl sm:text-7xl lg:text-[5.5rem] font-bold leading-[1.05] text-ink tracking-tight">
-          No dejes que los <span className="gradient-text">números</span><br className="hidden sm:block"/> decidan por vos.
+        <h1 className="reveal reveal-delay-1 max-w-5xl font-[family-name:var(--font-sora)] text-4xl sm:text-6xl lg:text-[5rem] font-bold leading-[1.08] text-ink tracking-tight">
+          Hacemos que tomes<br className="hidden sm:block"/> el <span className="gradient-text">control</span> de tu negocio
         </h1>
+
+        {/* Brand tagline */}
+        <p className="reveal reveal-delay-2 mt-6 font-[family-name:var(--font-sora)] text-sm sm:text-base font-bold tracking-[0.2em] uppercase text-wine/70">
+          AR Business Control
+        </p>
         
         {/* Subtitle */}
-        <p className="reveal reveal-delay-2 mt-8 text-lg sm:text-xl text-slate leading-relaxed max-w-2xl">
-          Ordenamos tus números para impulsar tu crecimiento.
-Asesoramos a personas, emprendedores y empresas en materia contable, impositiva, laboral y societaria, con atención personalizada en Argentina y de manera remota para toda Latinoamérica.
+        <p className="reveal reveal-delay-2 mt-6 text-lg sm:text-xl text-slate leading-relaxed max-w-2xl">
+          Ordenamos tus números. Detectamos riesgos. Convertimos información en decisiones.
         </p>
 
+        {/* Capabilities */}
+        <div className="reveal reveal-delay-3 mt-8 flex flex-wrap justify-center gap-2.5">
+          {["Contabilidad", "Impuestos", "Finanzas", "IA", "Estrategia empresarial"].map((cap) => (
+            <span key={cap} className="px-4 py-2 rounded-full bg-paper/60 backdrop-blur-sm border border-ink/5 text-sm font-semibold text-ink/80 select-none cursor-pointer transition-all duration-300 hover:bg-blush hover:text-wine hover:border-wine/10 hover:-translate-y-0.5 hover:shadow-md">
+              {cap}
+            </span>
+          ))}
+        </div>
+
         {/* CTA */}
-        <div className="reveal reveal-delay-3 mt-12 flex flex-col sm:flex-row items-center gap-6">
+        <div className="reveal reveal-delay-4 mt-12 flex flex-col sm:flex-row items-center gap-6">
           <a
             href={WHATSAPP_URL}
             target="_blank"
@@ -675,6 +689,129 @@ function Clientes() {
   );
 }
 
+/* ─── Preguntas Frecuentes ─── */
+function FAQ() {
+  const ref = useReveal();
+  const [open, setOpen] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      q: "¿Atienden clientes de TODAS las provincias?",
+      a: "Sí. Tenemos oficina en CABA y matrículas en casi toda la Argentina, trabajamos de forma remota y presencial con clientes de todo el país.",
+    },
+    {
+      q: "¿Cuánto cuesta el asesoramiento mensual?",
+      a: "Depende del volumen: no es lo mismo un monotributista sin empleados que una SRL con veinte personas en nómina y 7 jurisdicciones de Ingresos Brutos. Después de una primera charla te pasamos una propuesta cerrada, sin costos que aparezcan después.",
+      highlight: "La primera consulta es sin cargo.",
+    },
+    {
+      q: "Soy monotributista, ¿me conviene contratar un contador?",
+      a: "Si facturás cerca del tope de tu categoría, tenés clientes del exterior, sufrís retenciones o pensás incorporar personal, sí. Los dos errores más caros del monotributo son quedarse en una categoría que ya no corresponde y no advertir, a tiempo, la exclusión.",
+    },
+    {
+      q: "¿Trabajan con emprendedores que recién arrancan?",
+      a: "Sí, y es el mejor momento para consultar: elegir bien el encuadre y la herramienta a utilizar al inicio evita la mayor parte de los problemas que después cuestan meses ordenar.",
+    },
+    {
+      q: "¿Cómo hago para empezar?",
+      a: "Nos escribís por WhatsApp o correo electrónico. Coordinamos una primera reunión —presencial u online— para entender tu situación, y de ahí sale la propuesta.",
+    },
+    {
+      q: "¿Qué es el Régimen de Economía del Conocimiento y quién puede acceder?",
+      a: "Es un régimen de beneficios fiscales para empresas de software, servicios profesionales exportables, biotecnología, nanotecnología y otras actividades del conocimiento. Exige acreditar requisitos de capacitación, I+D o exportaciones, y presentar informes con firma de Contador Público. Verificamos si calificás antes de iniciar el trámite.",
+    },
+    {
+      q: "¿Qué son los CCG (Convenios de Corresponsabilidad Gremial)?",
+      a: "Es un régimen de beneficios fiscales para empresas primarias estacionales y otras actividades zonales. Exige acreditar requisitos obligatorios. Verificamos si calificás antes de iniciar el trámite.",
+    },
+  ];
+
+  return (
+    <section id="faq" ref={ref} className="py-32 bg-blush/20">
+      <div className="mx-auto max-w-4xl px-5">
+        <div className="text-center mb-16">
+          <h2 className="reveal font-[family-name:var(--font-sora)] text-4xl sm:text-5xl font-bold text-ink tracking-tight">
+            Preguntas <span className="gradient-text">frecuentes</span>
+          </h2>
+          <p className="reveal reveal-delay-1 mt-6 text-lg text-slate max-w-2xl mx-auto">
+            Lo que nuestros clientes preguntan antes de empezar a trabajar juntos.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, i) => {
+            const isOpen = open === i;
+            return (
+              <div key={i} className={`reveal ${i < 4 ? `reveal-delay-${(i % 4) + 1}` : ""}`}>
+                <button
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  className={`w-full text-left p-6 sm:p-7 rounded-[1.5rem] sm:rounded-[2rem] transition-all duration-500 ${
+                    isOpen
+                      ? "bg-rose/5 border border-rose/10 shadow-[inset_0_2px_10px_rgba(110,36,56,0.04)]"
+                      : "bg-paper border border-ink/5 shadow-sm hover:border-wine/10 hover:shadow-md"
+                  }`}
+                  aria-expanded={isOpen}
+                >
+                  <div className="flex items-center gap-4 sm:gap-6">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-[family-name:var(--font-sora)] text-base sm:text-lg font-bold text-ink leading-snug">
+                        {faq.q}
+                      </h3>
+                    </div>
+                    <div
+                      className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                        isOpen
+                          ? "rotate-180 bg-rose/10 text-rose"
+                          : "bg-slate/5 text-slate"
+                      }`}
+                    >
+                      <IconArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rotate-90" />
+                    </div>
+                  </div>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      isOpen ? "max-h-[500px] opacity-100 mt-5 sm:mt-6" : "max-h-0 opacity-0 mt-0"
+                    }`}
+                  >
+                    <div className="pt-5 border-t border-ink/5 text-base text-slate leading-relaxed">
+                      {faq.a}
+                      {faq.highlight && (
+                        <span className="inline-flex items-center gap-1.5 mt-4 px-4 py-2 bg-wine/5 border border-wine/10 rounded-xl text-sm font-semibold text-wine">
+                          <svg className="w-4 h-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clipRule="evenodd" />
+                          </svg>
+                          {faq.highlight}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </button>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* CTA below FAQ */}
+        <div className="reveal mt-16 text-center">
+          <p className="text-lg text-slate mb-6">
+            ¿Tu pregunta no está acá?
+          </p>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button text-base px-7 py-3.5"
+          >
+            <IconWhatsApp className="w-5 h-5" />
+            Consultanos directo
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── Contacto ─── */
 function Contacto() {
   const ref = useReveal();
@@ -919,6 +1056,7 @@ export default function Home() {
         <Metodologia />
         <Servicios />
         <Clientes />
+        <FAQ />
         <Contacto />
       </main>
       <Footer />

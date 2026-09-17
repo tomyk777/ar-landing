@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arcontable.ar"),
-  title: "AR Estudio Contable & Asoc. | Contable, Impositivo y Laboral",
+  title: "AR | Estudio Contable",
   description:
     "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
  keywords: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     },  
      },
     openGraph: {
-    title: "AR Estudio Contable & Asoc.",
+    title: "AR | Estudio Contable",
     description:
       "Asesoramiento contable, impositivo, laboral y societario para personas, emprendedores y empresas en toda Argentina.",
     url: "https://arcontable.ar",
