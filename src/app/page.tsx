@@ -586,7 +586,7 @@ function Clientes() {
 
   const clients = [
     { name: "Fernando Ojeda", rubro: "Peluquería", city: "Chaco", logo: "/LogosClientes/Logo-FernandoOjedaEstilista.png" },
-    { name: "Worren Bar SA", rubro: "Bar", city: "Chaco", logo: "/LogosClientes/Worren-Bar_Logo.png" },
+    { name: "Worren Bar SAS", rubro: "Bar", city: "Chaco", logo: "/LogosClientes/Worren-Bar_Logo.png" },
     { name: "Mayra Coop", rubro: "Veterinaria", city: "Corrientes", logo: "/LogosClientes/Logo-VeterinariaCorrientes.png" },
     { name: "Advance Bio", rubro: "Productos Alimenticios", city: "CABA", logo: "/LogosClientes/Logo-AdvanceBio.png" },
     { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar" },
