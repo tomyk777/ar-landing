@@ -236,13 +236,19 @@ function Nosotros() {
     },
     {
       name: "Mariano Rivera",
-      role: "Auditoría de Estados Contables",
+      role: "CPN · Auditoría de Estados Contables",
       credentials: "",
       desc: "Responsable de la auditoría de estados contables y del dictamen sobre la situación financiera real de cada cliente.",
     },
   ];
 
   const members = [
+    {
+      name: "Mariana Gauna",
+      role: "CPN · Auditoría de Estados Contables",
+      credentials: "",
+      desc: "Participa en la auditoría y análisis de los estados contables, garantizando la exactitud de la información financiera.",
+    },
     {
       name: "Andrea Galliotti",
       role: "Liquidación de Sueldos",
@@ -254,12 +260,6 @@ function Nosotros() {
       role: "Conciliación y Registraciones Contables",
       credentials: "",
       desc: "Responsable de mantener al día los registros contables, asegurando que los libros reflejen fielmente la operación.",
-    },
-    {
-      name: "Mariana Gauna",
-      role: "Auditoría de Estados Contables",
-      credentials: "",
-      desc: "Participa en la auditoría y análisis de los estados contables, garantizando la exactitud de la información financiera.",
     },
   ];
 
@@ -586,6 +586,7 @@ function Clientes() {
 
   const clients = [
     { name: "Fernando Ojeda", rubro: "Peluquería", city: "Chaco", logo: "/LogosClientes/Logo-FernandoOjedaEstilista.png" },
+    { name: "Worren Bar SA", rubro: "Bar", city: "Chaco", logo: "/LogosClientes/Worren-Bar_Logo.png" },
     { name: "Mayra Coop", rubro: "Veterinaria", city: "Corrientes", logo: "/LogosClientes/Logo-VeterinariaCorrientes.png" },
     { name: "Advance Bio", rubro: "Productos Alimenticios", city: "CABA", logo: "/LogosClientes/Logo-AdvanceBio.png" },
     { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar" },
@@ -723,6 +724,10 @@ function FAQ() {
     {
       q: "¿Qué son los CCG (Convenios de Corresponsabilidad Gremial)?",
       a: "Es un régimen de beneficios fiscales para empresas primarias estacionales y otras actividades zonales. Exige acreditar requisitos obligatorios. Verificamos si calificás antes de iniciar el trámite.",
+    },
+    {
+      q: "¿AR Estudio Contable ayuda a las empresas a certificarse como Empresa B?",
+      a: "Sí. Acompañamos a empresas que buscan avanzar hacia la certificación como Empresa B, ayudándolas a ordenar, relevar y documentar sus procesos, prácticas de gestión e impacto económico, social y ambiental. La certificación B Corp es otorgada por B Lab, entidad independiente que evalúa el cumplimiento de sus estándares. AR | Estudio Contable brinda el acompañamiento profesional, aunque no otorga ni garantiza la certificación.",
     },
   ];
 

@@ -141,8 +141,8 @@ const jsonLd = {
   sameAs: [
     "https://instagram.com/ar_estudiocontable",
     "https://x.com/AR_Contable",
-    "https://www.linkedin.com/company/ar-estudiocontable",
-    "https://www.tiktok.com/@arcontable",
+    "https://www.linkedin.com/in/ar-estudio-contable-online/",
+    "https://www.tiktok.com/@arcontable.ar?is_from_webapp=1&sender_device=pc",
   ],
 };
 

@@ -59,6 +59,14 @@ export function JsonLd() {
           text: "Es un régimen de beneficios fiscales para empresas primarias estacionales y otras actividades zonales. Exige acreditar requisitos obligatorios. Verificamos si calificás antes de iniciar el trámite.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿AR Estudio Contable ayuda a las empresas a certificarse como Empresa B?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. Acompañamos a empresas que buscan avanzar hacia la certificación como Empresa B, ayudándolas a ordenar, relevar y documentar sus procesos, prácticas de gestión e impacto económico, social y ambiental. La certificación B Corp es otorgada por B Lab, entidad independiente que evalúa el cumplimiento de sus estándares. AR | Estudio Contable brinda el acompañamiento profesional, aunque no otorga ni garantiza la certificación.",
+        },
+      },
     ],
   };
 
@@ -110,7 +118,9 @@ export function JsonLd() {
     ],
     sameAs: [
       "https://instagram.com/ar_estudiocontable",
-      "https://www.tiktok.com/@arcontable",
+      "https://x.com/AR_Contable",
+      "https://www.linkedin.com/in/ar-estudio-contable-online/",
+      "https://www.tiktok.com/@arcontable.ar?is_from_webapp=1&sender_device=pc",
     ],
   };
 
