@@ -597,10 +597,12 @@ function Clientes() {
     { name: "Teresa Porfirio", rubro: "Instituto de Danzas", city: "Puerto Vilelas" },
     { name: "Dra. Cristina Zarratea", rubro: "Terapista", city: "Chaco" },
     { name: "Avícola La Selección", rubro: "Productos Alimenticios", city: "Resistencia", logo: "/LogosClientes/Logo-AvicolaLaSeleccion.png" },
+    { name: "Yerman Studio", rubro: "Peluquería", city: "Resistencia", logo:"/LogosClientes/YermanEstudio_Logo.png"}
   ];
 
-  const row1 = [...clients.slice(0, 6), ...clients.slice(0, 6)];
-  const row2 = [...clients.slice(6, 11), ...clients.slice(6, 11)];
+  const half = Math.ceil(clients.length / 2);
+  const row1 = [...clients.slice(0, half), ...clients.slice(0, half)];
+  const row2 = [...clients.slice(half), ...clients.slice(half)];
 
   return (
     <section id="clientes" ref={ref} className="py-32 bg-paper overflow-hidden border-y border-ink/5">
