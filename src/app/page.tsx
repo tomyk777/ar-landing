@@ -627,28 +627,18 @@ function Clientes() {
           {row1.map((client, i) => (
             <div
               key={`row1-${i}`}
-              className="flex-shrink-0 w-80 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
+              className="flex-shrink-0 w-60 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col items-center justify-between gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
             >
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
-                  {client.logo ? (
-                    <div className="w-full h-full bg-white flex items-center justify-center p-1.5">
-                      <div className="relative w-full h-full">
-                        <Image src={client.logo} alt={`Logo de ${client.name}`} fill className="object-contain" />
-                      </div>
+              <div className="w-24 h-24 rounded-[1.5rem] bg-blush/50 flex items-center justify-center text-wine text-4xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
+                {client.logo ? (
+                  <div className="w-full h-full bg-white flex items-center justify-center p-2">
+                    <div className="relative w-full h-full">
+                      <Image src={client.logo} alt="Logo de Cliente" fill className="object-contain" />
                     </div>
-                  ) : (
-                    client.name.charAt(0)
-                  )}
-                </div>
-                <div>
-                  <p className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink line-clamp-1">
-                    {client.name}
-                  </p>
-                  <p className="text-sm font-medium text-slate">{client.city}</p>
-                </div>
+                  </div>
+                ) : null}
               </div>
-              <div className="inline-block self-start px-4 py-1.5 bg-ink/5 rounded-xl text-xs font-semibold text-ink tracking-wide">
+              <div className="inline-block px-4 py-1.5 bg-ink/5 rounded-xl text-xs font-semibold text-ink tracking-wide text-center">
                 {client.rubro}
               </div>
             </div>
@@ -660,28 +650,18 @@ function Clientes() {
           {row2.map((client, i) => (
             <div
               key={`row2-${i}`}
-              className="flex-shrink-0 w-80 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
+              className="flex-shrink-0 w-60 bg-paper border border-ink/5 rounded-[2rem] p-6 flex flex-col items-center justify-between gap-5 hover:border-wine/20 hover:shadow-md transition-all duration-300"
             >
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-blush/50 flex items-center justify-center text-wine text-xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
-                  {client.logo ? (
-                    <div className="w-full h-full bg-white flex items-center justify-center p-1.5">
-                      <div className="relative w-full h-full">
-                        <Image src={client.logo} alt={`Logo de ${client.name}`} fill className="object-contain" />
-                      </div>
+              <div className="w-24 h-24 rounded-[1.5rem] bg-blush/50 flex items-center justify-center text-wine text-4xl font-bold font-[family-name:var(--font-sora)] shrink-0 border border-wine/5 overflow-hidden">
+                {client.logo ? (
+                  <div className="w-full h-full bg-white flex items-center justify-center p-2">
+                    <div className="relative w-full h-full">
+                      <Image src={client.logo} alt="Logo de Cliente" fill className="object-contain" />
                     </div>
-                  ) : (
-                    client.name.charAt(0)
-                  )}
-                </div>
-                <div>
-                  <p className="font-[family-name:var(--font-sora)] text-lg font-bold text-ink line-clamp-1">
-                    {client.name}
-                  </p>
-                  <p className="text-sm font-medium text-slate">{client.city}</p>
-                </div>
+                  </div>
+                ) : null}
               </div>
-              <div className="inline-block self-start px-4 py-1.5 bg-ink/5 rounded-xl text-xs font-semibold text-ink tracking-wide">
+              <div className="inline-block px-4 py-1.5 bg-ink/5 rounded-xl text-xs font-semibold text-ink tracking-wide text-center">
                 {client.rubro}
               </div>
             </div>
