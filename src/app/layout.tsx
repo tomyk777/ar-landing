@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://arcontable.ar"),
   title: "AR | Estudio Contable",
   description:
-    "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
+    "Más de 15 años de trayectoria en asesoramiento contable, impositivo y laboral. Atención a distancia en toda Argentina.",
  keywords: [
     "estudio contable CABA",
     "estudio contable Chaco",
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AR Estudio Contable & Asoc. — Asesoramiento Contable, Impositivo y Societario",
+    title: "AR | Estudio Contable",
     description:
-      "Más de 15 años de trayectoria en asesoramiento contable, impositivo, laboral y societario. Atención en CABA, Buenos Aires y Chaco, y a distancia en toda Argentina.",
+      "Más de 15 años de trayectoria en asesoramiento contable, impositivo, laboral y societario. Atención a distancia en toda Argentina.",
     images: ["/logo.png"],
   },
   icons: {
@@ -103,11 +103,10 @@ const jsonLd = {
     addressLocality: "CABA",
     addressCountry: "AR",
   },
-  areaServed: [
-    { "@type": "AdministrativeArea", name: "Ciudad Autónoma de Buenos Aires" },
-    { "@type": "AdministrativeArea", name: "Buenos Aires" },
-    { "@type": "AdministrativeArea", name: "Chaco" },
-  ],
+  areaServed: {
+    "@type": "Country",
+    name: "Argentina",
+  },
   employee: [
     {
       "@type": "Person",

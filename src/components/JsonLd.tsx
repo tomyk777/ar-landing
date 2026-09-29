@@ -84,11 +84,10 @@ export function JsonLd() {
       addressLocality: "CABA",
       addressCountry: "AR",
     },
-    areaServed: [
-      { "@type": "AdministrativeArea", name: "Ciudad Autónoma de Buenos Aires" },
-      { "@type": "AdministrativeArea", name: "Buenos Aires" },
-      { "@type": "AdministrativeArea", name: "Chaco" },
-    ],
+    areaServed: {
+      "@type": "Country",
+      name: "Argentina",
+    },
     employee: [
       {
         "@type": "Person",
