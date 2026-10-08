@@ -589,13 +589,13 @@ function Clientes() {
     { name: "Worren Bar SAS", rubro: "Bar", city: "Chaco", logo: "/LogosClientes/Worren-Bar_Logo.png" },
     { name: "Veterinaria Corrientes", rubro: "Veterinaria", city: "Corrientes", logo: "/LogosClientes/Logo-VeterinariaCorrientes.png" },
     { name: "Advance Bio", rubro: "Productos Alimenticios", city: "CABA", logo: "/LogosClientes/Logo-AdvanceBio.png" },
-    { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar" },
+    { name: "Dra. Mariel Fernández", rubro: "Oftalmóloga", city: "Pilar", logo: "/LogosClientes/LogoOftalmologa.jpeg" },
     { name: "Est. Martínez Cristal SRL", rubro: "Panadería", city: "Resistencia", logo: "/LogosClientes/Logo-Panaderia.png" },
-    { name: "ARDIGITAL SAS", rubro: "Servicios de Software", city: "Barranqueras" },
+    { name: "ARDIGITAL SAS", rubro: "Servicios de Software", city: "Barranqueras", logo: "/LogosClientes/LogoServiciodeSoftware.jpeg" },
     { name: "Total Alimentos Arg. SAS", rubro: "Alimentos para Mascotas", city: "PBA", logo: "/LogosClientes/Logo-TotalAlimentos.png" },
-    { name: "Coop. Lautaro Comidas Ltda.", rubro: "Viandas", city: "Chaco" },
-    { name: "Teresa Porfirio", rubro: "Instituto de Danzas", city: "Puerto Vilelas" },
-    { name: "Dra. Cristina Zarratea", rubro: "Terapista", city: "Chaco" },
+    { name: "Coop. Lautaro Comidas Ltda.", rubro: "Viandas", city: "Chaco" , logo: "/LogosClientes/LogoViandas.jpeg" },
+    { name: "Teresa Porfirio", rubro: "Instituto de Danzas", city: "Puerto Vilelas", logo: "/LogosClientes/InstitutodeDanza.png" },
+    { name: "Dra. Cristina Zarratea", rubro: "Terapista", city: "Chaco", logo: "/LogosClientes/LogoTerapista.jpeg" },
     { name: "Avícola La Selección", rubro: "Productos Alimenticios", city: "Resistencia", logo: "/LogosClientes/Logo-AvicolaLaSeleccion.png" },
     { name: "Yerman Studio", rubro: "Peluquería", city: "Resistencia", logo:"/LogosClientes/YermanEstudio_Logo.png"}
   ];
