@@ -291,7 +291,7 @@ function Nosotros() {
                   “
                 </span>
                 <p className="text-lg sm:text-xl text-ink font-medium italic leading-relaxed">
-                  Hacer contabilidad es registrar el pasado — hacer asesoramiento es ayudar a construir el futuro.
+                  La contabilidad cuenta la historia de lo que fue; el asesoramiento financiero escribe la historia de lo que será.
                 </p>
               </div>
             </div>
